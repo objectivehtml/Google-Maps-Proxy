@@ -1,0 +1,18 @@
+/**
+ * Google Maps Proxy
+ * 
+ * @package		Google Maps Proxy
+ * @author		Justin Kimbrell
+ * @copyright	Copyright (c) 2012, Objective HTML
+ * @link 		http://www.objectivehtml.com/google-maps-proxy
+ * @version		1.1
+ * @build		20121106
+ */
+
+v1.1 - 11/07/2012
+------------------
+Refactored code for public release.
+
+v1.0 - 04/01/2012
+------------------
+Initial (private) release
