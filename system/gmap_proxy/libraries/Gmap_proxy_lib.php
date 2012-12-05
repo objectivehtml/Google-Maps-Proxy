@@ -39,6 +39,7 @@ class Gmap_proxy_lib {
 			$this->model->log_query($query, $limit, $offset);
 
 			$response = $this->EE->channel_data->gmap->geocode($query, $limit, $offset);
+			$response = $response[0];
 		}
 		
 		return $this->response($response);
