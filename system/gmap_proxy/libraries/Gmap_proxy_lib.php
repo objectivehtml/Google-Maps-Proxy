@@ -45,6 +45,26 @@ class Gmap_proxy_lib {
 		return $this->response($response);
 	}
 	
+	public function directions()
+	{		
+		$origin	 		= $this->EE->input->get('origin');
+		$destination 	= $this->EE->input->get('destination');
+		$waypoints		= $this->EE->input->get('waypoints');
+		
+		if(!$origin || empty($origin) || !$destination || empty($destination))
+		{
+			$response = array('error' => 'You must pass an origin and a destination.');
+		}
+		else
+		{
+			$response 	= $this->EE->google_maps->directions($origin, $destination, array(
+				'waypoints' => urlencode($waypoints)
+			));
+		}
+
+		return $this->response($response);
+	}
+	
 	public function response($response, $response_code = 200)
 	{
 		if($response_code)
