@@ -15,13 +15,15 @@
  * ExpressionEngine handles loading drivers.
  *
  * @package		Channel Data
+ * @subpackage	Libraries
  * @category	Library
  * @author		Justin Kimbrell
  * @copyright	Copyright (c) 2012, Justin Kimbrell
  * @link 		http://www.objectivehtml.com/libraries/channel_data
- * @version		0.6.2
- * @build		20120115
+ * @version		0.8.11
+ * @build		20121106
  */
+
 
 include_once('Channel_data_lib.php');
 
@@ -31,7 +33,7 @@ if(!class_exists('Channel_data'))
 		
 		// Available Drivers
 			
-		public $drivers = array('channel_data_api', 'channel_data_utility');	
+		public $drivers = array('channel_data_api', 'channel_data_utility', 'channel_data_tmpl');	
 		public $debug	= FALSE;
 		
 		/**
