@@ -2,5 +2,5 @@
 
 if(!defined('GMAP_PROXY_VERSION'))
 {
-	define('GMAP_PROXY_VERSION', 1.1);
+	define('GMAP_PROXY_VERSION', '1.1.1');
 }
