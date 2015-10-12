@@ -148,20 +148,7 @@ class Gmap_proxy_upd {
 				);
 			}
 		}
-		
-		// Version Specific Update Routines
-		
-		if(version_compare($current, '1.1.99.4', '<'))
-		{
-			if(!class_exists('Postmaster_lib'))
-			{				
-				require_once(PATH_THIRD.'postmaster/libraries/Postmaster_lib.php');
-			}
-			
-			$this->EE->postmaster_lib = new Postmaster_lib();
-			$this->EE->postmaster_model->assign_site_id();
-		}
-		
+				
 	    return TRUE;
 	}
 	
